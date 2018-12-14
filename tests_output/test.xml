@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="test"
+    errors="1" failures="0" hostname="" id="" package="test" skipped="0"
+    tests="1" time="0.004000" timestamp="Tue, 11 Dec 2018 22:11:20 GMT">
+  
+    <testcase name="Test Script 4 : To test the modification and save functionality of empty test data" classname="test" time="0.004000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Test / Test Script 4 : To test the modification and save functionality of empty test data]:
+
+  ReferenceError: BACKSPACE is not defined
+    at Object.Test Script 4 : To test the modification and save functionality of empty test data (C:\Users\mrosh\Downloads\DevMtn\employeeManager\tests\test.js:24:66)
+    at Module.call (C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="6">
+
+  <testsuite name="empManager"
+    errors="0" failures="0" hostname="" id="" package="empManager" skipped="0"
+    tests="6" time="12.25" timestamp="Sat, 08 Dec 2018 20:57:59 GMT">
+  
+    <testcase name="Loading correct employee info in the editor" classname="empManager" time="5.910" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="To test save functionality of valid inputs/changes" classname="empManager" time="2.346" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="To test the modification and save functionality of valid inputs/changes" classname="empManager" time="1.677" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="To test the modification and save functionality of empty test data" classname="empManager" time="1.002" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="To test the modification and cancel functionality" classname="empManager" time="0.7840" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Checking if the save and cancel buttons are inactive when no changes are made the employee details." classname="empManager" time="0.5310" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

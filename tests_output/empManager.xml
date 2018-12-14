@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="6">
+
+  <testsuite name="empManager"
+    errors="1" failures="0" hostname="" id="" package="empManager" skipped="5"
+    tests="6" time="0.009000" timestamp="Sat, 08 Dec 2018 20:46:42 GMT">
+  
+    <testcase name="Loading correct employee info in the editor" classname="empManager" time="0.009000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Emp Manager / Loading correct employee info in the editor]:
+
+  TypeError: browser.click(...).verify.containsText(...).verify.value(...).verify.va is not a function
+    at Object.Loading correct employee info in the editor (C:\Users\mrosh\Downloads\DevMtn\employeeManager\tests\empManager.js:21:21)
+    at Module.call (C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    </system-err>
+  
+
+  
+    
+    <testcase
+      name="To test save functionality of valid inputs/changes" classname="empManager">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="To test the modification and save functionality of valid inputs/changes" classname="empManager">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="To test the modification and save functionality of empty test data" classname="empManager">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="To test the modification and cancel functionality" classname="empManager">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Checking if the save and cancel buttons are inactive when no changes are made the employee details." classname="empManager">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
