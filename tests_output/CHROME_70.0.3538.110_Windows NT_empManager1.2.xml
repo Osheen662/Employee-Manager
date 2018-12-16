@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="19">
+
+  <testsuite name="empManager1.2"
+    errors="0" failures="0" hostname="" id="" package="empManager1.2" skipped="0"
+    tests="19" time="21.31" timestamp="Sat, 15 Dec 2018 20:20:28 GMT">
+  
+    <testcase name="Test Script 1 : Loading correct employee info in the editor" classname="empManager1.2" time="4.840" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 2 : To test save functionality of valid inputs/changes" classname="empManager1.2" time="1.416" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 3 : To test the modification and save functionality of valid inputs/changes" classname="empManager1.2" time="1.102" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 4 : To test the modification and save functionality of empty test data" classname="empManager1.2" time="1.203" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 5 : To check if the data can be saved any other way other than the save button" classname="empManager1.2" time="0.6620" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 6 : To test the modification and cancel functionality" classname="empManager1.2" time="0.7180" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 7 : Checking if the save and cancel buttons are inactive when no changes are made the employee details." classname="empManager1.2" time="0.4510" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 8 : Check for valid length inputs for the Name field." classname="empManager1.2" time="0.9380" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 9 : Check for invalid length inputs for the Name field." classname="empManager1.2" time="1.081" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 10 : Check for valid type inputs for the Name field." classname="empManager1.2" time="0.8530" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 11 : Check for valid length and datatype inputs for the Phone Number field." classname="empManager1.2" time="0.7820" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 12 : Check for short length inputs for the Phone Number field." classname="empManager1.2" time="0.7870" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 13 : Check for long length inputs for the Phone Number field." classname="empManager1.2" time="0.8920" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 14 : Check for invalid datatype inputs for the Phone Number field." classname="empManager1.2" time="0.7660" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 15 : Check for valid length inputs for the Title field." classname="empManager1.2" time="0.7800" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 16 : Check for invalid length inputs for the Title field." classname="empManager1.2" time="0.9580" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 17 : Check for invalid datatype inputs for the Title field." classname="empManager1.2" time="0.6550" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 18 : Error Message persists from one employee to another, once an Phone number field throws an error and turns red, the color persists" classname="empManager1.2" time="1.115" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Script 19 : Error Message persists from one employee to another, once an name/title field throws an error and turns red, any data after that is not saved" classname="empManager1.2" time="1.312" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
