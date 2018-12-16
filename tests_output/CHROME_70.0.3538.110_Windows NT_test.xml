@@ -5,13 +5,9 @@
 
   <testsuite name="test"
     errors="0" failures="0" hostname="" id="" package="test" skipped="0"
-    tests="1" time="26.62" timestamp="Tue, 11 Dec 2018 22:19:09 GMT">
+    tests="1" time="5.223" timestamp="Sat, 15 Dec 2018 03:49:51 GMT">
   
-    <testcase name="Test Script 4 : To test the modification and save functionality of empty test data" classname="test" time="26.62" assertions="6">
-
-    
-
-    
+    <testcase name="Test Script 1 : Loading correct employee info in the editor" classname="test" time="5.223" assertions="4">
 
     
 

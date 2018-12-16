@@ -5,18 +5,18 @@
 
   <testsuite name="test"
     errors="1" failures="0" hostname="" id="" package="test" skipped="0"
-    tests="1" time="0.004000" timestamp="Tue, 11 Dec 2018 22:11:20 GMT">
+    tests="1" time="0.01300" timestamp="Sat, 15 Dec 2018 03:47:25 GMT">
   
-    <testcase name="Test Script 4 : To test the modification and save functionality of empty test data" classname="test" time="0.004000" assertions="0">
+    <testcase name="Test Script 1 : Loading correct employee info in the editor" classname="test" time="0.01300" assertions="0">
     </testcase>
   
 
   
     <system-err>
-        Error while running [Test / Test Script 4 : To test the modification and save functionality of empty test data]:
+        Error while running [Test / Test Script 1 : Loading correct employee info in the editor]:
 
-  ReferenceError: BACKSPACE is not defined
-    at Object.Test Script 4 : To test the modification and save functionality of empty test data (C:\Users\mrosh\Downloads\DevMtn\employeeManager\tests\test.js:24:66)
+  ReferenceError: employeeID is not defined
+    at Object.Test Script 1 : Loading correct employee info in the editor (C:\Users\mrosh\Downloads\DevMtn\Employee-Manager\tests\test.js:29:34)
     at Module.call (C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\module.js:62:34)
     at C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\testcase.js:70:29
     at _fulfilled (C:\Users\mrosh\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:834:54)
