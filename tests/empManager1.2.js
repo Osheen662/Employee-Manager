@@ -6,6 +6,8 @@ var clickByText = (browser,textToBeSelected) =>{
         .click(`//*[text()="${textToBeSelected}"]`)
         .useCss()
 }
+
+
 module.exports = {
     beforeEach: browser =>{
         empManagerPageObjs = browser.page.empManagerObjectsPage()
