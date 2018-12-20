@@ -6,19 +6,23 @@ var employeeeManagerCommands = {
         return this
     },
     
-    modifyEmployee: function(oldEmployeeInfo,newEmployeeInfo,verificationEmployee){
-        this
-            .clickByText(oldEmployeeInfo)
-            .verify.containsText('@editorTitle',oldEmployeeInfo)
-            .clearValue('@nameInput')
-            .setValue('@nameInput',newEmployeeInfo.name)
-            .clearValue('@phoneNumberInput')
-            .setValue('@phoneNumberInput',newEmployeeInfo.phone)
-            .clearValue('@titleInput')
-            .setValue('@titleInput',newEmployeeInfo.title)
-            .clickByText(' Save ')
-            .clickByText(verificationEmployee)
-            .clickByText(newEmployeeInfo.name)
+    editEmployee: function(newEmployeeInfo){
+        if(newEmployeeInfo.name){
+            this
+                .clearValue('@nameInput')
+                .setValue('@nameInput',newEmployeeInfo.name)
+        }
+         if(newEmployeeInfo.phone){
+            this
+                .clearValue('@phoneNumberInput')
+                .setValue('@phoneNumberInput',newEmployeeInfo.phone)
+         }   
+         if(newEmployeeInfo.title){
+            this
+                .clearValue('@titleInput')
+                .setValue('@titleInput',newEmployeeInfo.title)
+         }   
+            
         return this
     },
     
@@ -33,6 +37,7 @@ var employeeeManagerCommands = {
 }
 
 module.exports = {
+    //url : 'http://localhost:3000/',
     url : 'https://devmountain-qa.github.io/employee-manager/1.2_Version/index.html',
     commands: [employeeeManagerCommands],
     elements : {

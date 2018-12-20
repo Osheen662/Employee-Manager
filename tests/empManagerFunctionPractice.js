@@ -1,5 +1,6 @@
 var empManagerPageObjs = {}
 
+let modifyEmployee = require('../test-assests/modulesPractice')
 // var clickByText = (browser,textToBeSelected) =>{
 //     browser
 //         .useXpath()
@@ -51,16 +52,18 @@ module.exports = {
             .clickByText('Bernice Ortiz')          
             .verify.containsText('@employeeID','1')
             .verificationOfSelectedEmployeeDetails({name:'Bernice Ortiz',phone: '4824931093',title: 'CEO'})
-        
+            //.api.pause(20000)
     },
 
 
     //Testing the save functionality
     'Test Script 2 : To test save functionality of valid inputs/changes': browser=>{
         //https://dmutah.atlassian.net/browse/Q9R-31
-        empManagerPageObjs
-            .modifyEmployee('Marnie Barnett',{name:'Marnie Barnett Bishop',phone:'3545434567',title:'CFO'}, 'Dollie Berry')
+    
+            modifyEmployee(empManagerPageObjs,'Marnie Barnett',{name:'Marnie Barnett Bishop',phone:'3545434567',title:'CFO'}, 'Dollie Berry')
+            empManagerPageObjs
             .verificationOfSelectedEmployeeDetails({name: 'Marnie Barnett Bishop',phone: '3545434567',title: 'CFO'})
+            //.api.pause(20000)
     
     },
     'Test Script 3 : To test the modification and save functionality of valid inputs/changes': browser=>{
@@ -73,6 +76,7 @@ module.exports = {
         .setValue('@titleInput','CFO')
         .clickByText(' Save ')
         .verificationOfSelectedEmployeeDetails({name: 'Marnie Barnett Bishop',phone: '3094812387',title: 'CTOCFO'})
+        //.api.pause(20000)
     },     
     
     'Test Script 4 : To test the Add Employee Functionality': browser=>{
@@ -85,9 +89,10 @@ module.exports = {
         // # Add the desired employee name, phone, and title.
         // # Click save
         // # Click on another employee record.
-        .modifyEmployee('New Employee',{name:'Ichigo Kurosaki',phone:'3545434567',title:'Shinigami'}, 'Dollie Berry')
+        modifyEmployee(empManagerPageObjs,'New Employee',{name:'Ichigo Kurosaki',phone:'3545434567',title:'Shinigami'}, 'Dollie Berry' )
          // # Click back on the newly created employee and verify the entered details.
-        .verificationOfSelectedEmployeeDetails({name: 'Ichigo Kurosaki',phone: '3545434567',title: 'Shinigami'})
+         empManagerPageObjs.verificationOfSelectedEmployeeDetails({name: 'Ichigo Kurosaki',phone: '3545434567',title: 'Shinigami'})
+       // .api.pause(20000)
        
     }
 }
