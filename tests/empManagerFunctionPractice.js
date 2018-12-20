@@ -1,5 +1,6 @@
 var empManagerPageObjs = {}
 
+var employeeTestData = require('../test-assests/employeeTestData')
 let modifyEmployee = require('../test-assests/modulesPractice')
 // var clickByText = (browser,textToBeSelected) =>{
 //     browser
@@ -82,16 +83,21 @@ module.exports = {
     'Test Script 4 : To test the Add Employee Functionality': browser=>{
         //Adding a new Employee
         //https://dmutah.atlassian.net/browse/Q9R-57
-        empManagerPageObjs
-        .clickByText(' + Add Employee ')   // # Click on  "+ Add Employee "
+        employeeTestData.characters_bleach.forEach(test =>{
+            empManagerPageObjs.clickByText(' + Add Employee ')
+            modifyEmployee(empManagerPageObjs,'New Employee',{name: test.name,phone: test.phone,title: test.title}, 'Dollie Berry' )
+            empManagerPageObjs.verificationOfSelectedEmployeeDetails({name: test.name,phone: test.phone,title: test.title})
+        })
+        
+          // # Click on  "+ Add Employee "
         // # A new employee with the name "New Employee" will be created.
         // # Verify the details in the editor.
         // # Add the desired employee name, phone, and title.
         // # Click save
         // # Click on another employee record.
-        modifyEmployee(empManagerPageObjs,'New Employee',{name:'Ichigo Kurosaki',phone:'3545434567',title:'Shinigami'}, 'Dollie Berry' )
+        
          // # Click back on the newly created employee and verify the entered details.
-         empManagerPageObjs.verificationOfSelectedEmployeeDetails({name: 'Ichigo Kurosaki',phone: '3545434567',title: 'Shinigami'})
+        
        // .api.pause(20000)
        
     }
